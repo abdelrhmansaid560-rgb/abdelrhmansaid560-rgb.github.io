@@ -1,0 +1,106 @@
+/* نظام الثيمات المتغيرة */
+
+/* الثيم الافتراضي - داكن مع ذهبي */
+:root {
+    --primary-color: #1a1a2e;
+    --secondary-color: #16213e;
+    --accent-color: #e94560;
+    --gold-color: #ffd700;
+    --text-color: #333;
+    --light-bg: #f8f9fa;
+    --white: #ffffff;
+    --transition: all 0.3s ease;
+}
+
+/* ثيم فاتح - أبيض مع أزرق */
+[data-theme="light"] {
+    --primary-color: #2196F3;
+    --secondary-color: #1976D2;
+    --accent-color: #FF5722;
+    --gold-color: #2196F3;
+    --text-color: #333;
+    --light-bg: #ffffff;
+    --white: #ffffff;
+}
+
+/* ثيم أخضر طبيعي */
+[data-theme="nature"] {
+    --primary-color: #2E7D32;
+    --secondary-color: #1B5E20;
+    --accent-color: #FF8F00;
+    --gold-color: #4CAF50;
+    --text-color: #333;
+    --light-bg: #F1F8E9;
+    --white: #ffffff;
+}
+
+/* ثيم أرجواني أنيق */
+[data-theme="purple"] {
+    --primary-color: #6A1B9A;
+    --secondary-color: #4A148C;
+    --accent-color: #E91E63;
+    --gold-color: #9C27B0;
+    --text-color: #333;
+    --light-bg: #F3E5F5;
+    --white: #ffffff;
+}
+
+/* ثيم ترابي دافئ */
+[data-theme="warm"] {
+    --primary-color: #795548;
+    --secondary-color: #5D4037;
+    --accent-color: #FF6F00;
+    --gold-color: #8D6E63;
+    --text-color: #333;
+    --light-bg: #FFF3E0;
+    --white: #ffffff;
+}
+
+/* ثيم أحمر عصري */
+[data-theme="red"] {
+    --primary-color: #C62828;
+    --secondary-color: #B71C1C;
+    --accent-color: #FF6F00;
+    --gold-color: #F44336;
+    --text-color: #333;
+    --light-bg: #FFEBEE;
+    --white: #ffffff;
+}
+
+/* عداد الزيارات */
+.visit-counter {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.visit-counter i {
+    color: var(--gold-color);
+}
+
+/* منتقي الثيمات - تم إيقافه مؤقتاً للتحسينات */
+.theme-switcher {
+    display: none !important;
+}
+
+.theme-option {
+    display: none !important;
+}
+
+/* تصميم متجاوب للمنتقي */
+@media (max-width: 768px) {
+    .theme-switcher {
+        display: none !important;
+    }
+    
+    .theme-option {
+        display: none !important;
+    }
+}
